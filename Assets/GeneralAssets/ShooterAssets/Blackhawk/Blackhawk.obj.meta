@@ -1,0 +1,874 @@
+fileFormatVersion: 2
+guid: bac7f509ea74ff844b29c429e15d5756
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: cockpit
+    100006: cockpit_windows
+    100008: jammer
+    100010: jammer_
+    100012: lamp1
+    100014: lamp2
+    100016: leftammobelt
+    100018: leftcockpitdoor
+    100020: leftcockpitdoor_window
+    100022: leftcontrols
+    100024: leftdoor
+    100026: leftdoor_windows
+    100028: leftengine
+    100030: leftgunnerdoor
+    100032: leftgunnerdoor_windows
+    100034: leftgunnerseat
+    100036: leftlafette
+    100038: leftminigun
+    100040: leftminigunbarrels
+    100042: leftpilotseat
+    100044: leftwheel
+    100046: leftwheel_
+    100048: mainhull
+    100050: randomthing1
+    100052: randomthing2
+    100054: randomthing3
+    100056: rearwheel
+    100058: rearwheel_
+    100060: rightammobelt
+    100062: rightcockpitdoor
+    100064: rightcockpitdoor_window
+    100066: rightcontrols
+    100068: rightdoor
+    100070: rightdoor_windows
+    100072: rightengine
+    100074: rightgunnerdoor
+    100076: rightgunnerdoor_windows
+    100078: rightgunnerseat
+    100080: rightlafette
+    100082: rightminigun
+    100084: rightminigunbarrels
+    100086: rightpilotseat
+    100088: rightwheel
+    100090: rightwheel_
+    100092: rotor1
+    100094: rotor2
+    100096: rotor3
+    100098: rotor4
+    100100: rotorhead
+    100102: seat1_1
+    100104: seat1_2
+    100106: seat1_3
+    100108: seat1_4
+    100110: seat2_1
+    100112: seat2_2
+    100114: seat2_3
+    100116: seat2_4
+    100118: seat3_1
+    100120: seat3_2
+    100122: seat3_3
+    100124: seat3_4
+    100126: tailfin
+    100128: tailrotor1
+    100130: tailrotor2
+    100132: tailrotor3
+    100134: tailrotor4
+    100136: tailrotorhead
+    100138: tailthing
+    100140: tailwing
+    100142: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: cockpit
+    400006: cockpit_windows
+    400008: jammer
+    400010: jammer_
+    400012: lamp1
+    400014: lamp2
+    400016: leftammobelt
+    400018: leftcockpitdoor
+    400020: leftcockpitdoor_window
+    400022: leftcontrols
+    400024: leftdoor
+    400026: leftdoor_windows
+    400028: leftengine
+    400030: leftgunnerdoor
+    400032: leftgunnerdoor_windows
+    400034: leftgunnerseat
+    400036: leftlafette
+    400038: leftminigun
+    400040: leftminigunbarrels
+    400042: leftpilotseat
+    400044: leftwheel
+    400046: leftwheel_
+    400048: mainhull
+    400050: randomthing1
+    400052: randomthing2
+    400054: randomthing3
+    400056: rearwheel
+    400058: rearwheel_
+    400060: rightammobelt
+    400062: rightcockpitdoor
+    400064: rightcockpitdoor_window
+    400066: rightcontrols
+    400068: rightdoor
+    400070: rightdoor_windows
+    400072: rightengine
+    400074: rightgunnerdoor
+    400076: rightgunnerdoor_windows
+    400078: rightgunnerseat
+    400080: rightlafette
+    400082: rightminigun
+    400084: rightminigunbarrels
+    400086: rightpilotseat
+    400088: rightwheel
+    400090: rightwheel_
+    400092: rotor1
+    400094: rotor2
+    400096: rotor3
+    400098: rotor4
+    400100: rotorhead
+    400102: seat1_1
+    400104: seat1_2
+    400106: seat1_3
+    400108: seat1_4
+    400110: seat2_1
+    400112: seat2_2
+    400114: seat2_3
+    400116: seat2_4
+    400118: seat3_1
+    400120: seat3_2
+    400122: seat3_3
+    400124: seat3_4
+    400126: tailfin
+    400128: tailrotor1
+    400130: tailrotor2
+    400132: tailrotor3
+    400134: tailrotor4
+    400136: tailrotorhead
+    400138: tailthing
+    400140: tailwing
+    400142: //RootNode
+    2100000: Box001Mat
+    2100002: Box002Mat
+    2100004: cockpitMat
+    2100006: cockpit_windowsMat
+    2100008: jammerMat
+    2100010: jammer_Mat
+    2100012: lamp1Mat
+    2100014: lamp2Mat
+    2100016: leftammobeltMat
+    2100018: leftcockpitdoorMat
+    2100020: leftcockpitdoor_windowMat
+    2100022: leftcontrolsMat
+    2100024: leftdoorMat
+    2100026: leftdoor_windowsMat
+    2100028: leftengineMat
+    2100030: leftgunnerdoorMat
+    2100032: leftgunnerdoor_windowsMat
+    2100034: leftgunnerseatMat
+    2100036: leftlafetteMat
+    2100038: leftminigunMat
+    2100040: leftminigunbarrelsMat
+    2100042: leftpilotseatMat
+    2100044: leftwheelMat
+    2100046: leftwheel_Mat
+    2100048: mainhullMat
+    2100050: randomthing1Mat
+    2100052: randomthing2Mat
+    2100054: randomthing3Mat
+    2100056: rearwheelMat
+    2100058: rearwheel_Mat
+    2100060: rightammobeltMat
+    2100062: rightcockpitdoorMat
+    2100064: rightcockpitdoor_windowMat
+    2100066: rightcontrolsMat
+    2100068: rightdoorMat
+    2100070: rightdoor_windowsMat
+    2100072: rightengineMat
+    2100074: rightgunnerdoorMat
+    2100076: rightgunnerdoor_windowsMat
+    2100078: rightgunnerseatMat
+    2100080: rightlafetteMat
+    2100082: rightminigunMat
+    2100084: rightminigunbarrelsMat
+    2100086: rightpilotseatMat
+    2100088: rightwheelMat
+    2100090: rightwheel_Mat
+    2100092: rotor1Mat
+    2100094: rotor2Mat
+    2100096: rotor3Mat
+    2100098: rotor4Mat
+    2100100: rotorheadMat
+    2100102: seat1_1Mat
+    2100104: seat1_2Mat
+    2100106: seat1_3Mat
+    2100108: seat1_4Mat
+    2100110: seat2_1Mat
+    2100112: seat2_2Mat
+    2100114: seat2_3Mat
+    2100116: seat2_4Mat
+    2100118: seat3_1Mat
+    2100120: seat3_2Mat
+    2100122: seat3_3Mat
+    2100124: seat3_4Mat
+    2100126: tailfinMat
+    2100128: tailrotor1Mat
+    2100130: tailrotor2Mat
+    2100132: tailrotor3Mat
+    2100134: tailrotor4Mat
+    2100136: tailrotorheadMat
+    2100138: tailthingMat
+    2100140: tailwingMat
+    2300000: Box001
+    2300002: Box002
+    2300004: cockpit
+    2300006: cockpit_windows
+    2300008: jammer
+    2300010: jammer_
+    2300012: lamp1
+    2300014: lamp2
+    2300016: leftammobelt
+    2300018: leftcockpitdoor
+    2300020: leftcockpitdoor_window
+    2300022: leftcontrols
+    2300024: leftdoor
+    2300026: leftdoor_windows
+    2300028: leftengine
+    2300030: leftgunnerdoor
+    2300032: leftgunnerdoor_windows
+    2300034: leftgunnerseat
+    2300036: leftlafette
+    2300038: leftminigun
+    2300040: leftminigunbarrels
+    2300042: leftpilotseat
+    2300044: leftwheel
+    2300046: leftwheel_
+    2300048: mainhull
+    2300050: randomthing1
+    2300052: randomthing2
+    2300054: randomthing3
+    2300056: rearwheel
+    2300058: rearwheel_
+    2300060: rightammobelt
+    2300062: rightcockpitdoor
+    2300064: rightcockpitdoor_window
+    2300066: rightcontrols
+    2300068: rightdoor
+    2300070: rightdoor_windows
+    2300072: rightengine
+    2300074: rightgunnerdoor
+    2300076: rightgunnerdoor_windows
+    2300078: rightgunnerseat
+    2300080: rightlafette
+    2300082: rightminigun
+    2300084: rightminigunbarrels
+    2300086: rightpilotseat
+    2300088: rightwheel
+    2300090: rightwheel_
+    2300092: rotor1
+    2300094: rotor2
+    2300096: rotor3
+    2300098: rotor4
+    2300100: rotorhead
+    2300102: seat1_1
+    2300104: seat1_2
+    2300106: seat1_3
+    2300108: seat1_4
+    2300110: seat2_1
+    2300112: seat2_2
+    2300114: seat2_3
+    2300116: seat2_4
+    2300118: seat3_1
+    2300120: seat3_2
+    2300122: seat3_3
+    2300124: seat3_4
+    2300126: tailfin
+    2300128: tailrotor1
+    2300130: tailrotor2
+    2300132: tailrotor3
+    2300134: tailrotor4
+    2300136: tailrotorhead
+    2300138: tailthing
+    2300140: tailwing
+    3300000: Box001
+    3300002: Box002
+    3300004: cockpit
+    3300006: cockpit_windows
+    3300008: jammer
+    3300010: jammer_
+    3300012: lamp1
+    3300014: lamp2
+    3300016: leftammobelt
+    3300018: leftcockpitdoor
+    3300020: leftcockpitdoor_window
+    3300022: leftcontrols
+    3300024: leftdoor
+    3300026: leftdoor_windows
+    3300028: leftengine
+    3300030: leftgunnerdoor
+    3300032: leftgunnerdoor_windows
+    3300034: leftgunnerseat
+    3300036: leftlafette
+    3300038: leftminigun
+    3300040: leftminigunbarrels
+    3300042: leftpilotseat
+    3300044: leftwheel
+    3300046: leftwheel_
+    3300048: mainhull
+    3300050: randomthing1
+    3300052: randomthing2
+    3300054: randomthing3
+    3300056: rearwheel
+    3300058: rearwheel_
+    3300060: rightammobelt
+    3300062: rightcockpitdoor
+    3300064: rightcockpitdoor_window
+    3300066: rightcontrols
+    3300068: rightdoor
+    3300070: rightdoor_windows
+    3300072: rightengine
+    3300074: rightgunnerdoor
+    3300076: rightgunnerdoor_windows
+    3300078: rightgunnerseat
+    3300080: rightlafette
+    3300082: rightminigun
+    3300084: rightminigunbarrels
+    3300086: rightpilotseat
+    3300088: rightwheel
+    3300090: rightwheel_
+    3300092: rotor1
+    3300094: rotor2
+    3300096: rotor3
+    3300098: rotor4
+    3300100: rotorhead
+    3300102: seat1_1
+    3300104: seat1_2
+    3300106: seat1_3
+    3300108: seat1_4
+    3300110: seat2_1
+    3300112: seat2_2
+    3300114: seat2_3
+    3300116: seat2_4
+    3300118: seat3_1
+    3300120: seat3_2
+    3300122: seat3_3
+    3300124: seat3_4
+    3300126: tailfin
+    3300128: tailrotor1
+    3300130: tailrotor2
+    3300132: tailrotor3
+    3300134: tailrotor4
+    3300136: tailrotorhead
+    3300138: tailthing
+    3300140: tailwing
+    4300000: Box001
+    4300002: Box002
+    4300004: cockpit
+    4300006: cockpit_windows
+    4300008: jammer
+    4300010: jammer_
+    4300012: lamp1
+    4300014: lamp2
+    4300016: leftammobelt
+    4300018: leftcockpitdoor
+    4300020: leftcockpitdoor_window
+    4300022: leftcontrols
+    4300024: leftdoor
+    4300026: leftdoor_windows
+    4300028: leftengine
+    4300030: leftgunnerdoor
+    4300032: leftgunnerdoor_windows
+    4300034: leftgunnerseat
+    4300036: leftlafette
+    4300038: leftminigun
+    4300040: leftminigunbarrels
+    4300042: leftpilotseat
+    4300044: leftwheel
+    4300046: leftwheel_
+    4300048: mainhull
+    4300050: randomthing1
+    4300052: randomthing2
+    4300054: randomthing3
+    4300056: rearwheel
+    4300058: rearwheel_
+    4300060: rightammobelt
+    4300062: rightcockpitdoor
+    4300064: rightcockpitdoor_window
+    4300066: rightcontrols
+    4300068: rightdoor
+    4300070: rightdoor_windows
+    4300072: rightengine
+    4300074: rightgunnerdoor
+    4300076: rightgunnerdoor_windows
+    4300078: rightgunnerseat
+    4300080: rightlafette
+    4300082: rightminigun
+    4300084: rightminigunbarrels
+    4300086: rightpilotseat
+    4300088: rightwheel
+    4300090: rightwheel_
+    4300092: rotor1
+    4300094: rotor2
+    4300096: rotor3
+    4300098: rotor4
+    4300100: rotorhead
+    4300102: seat1_1
+    4300104: seat1_2
+    4300106: seat1_3
+    4300108: seat1_4
+    4300110: seat2_1
+    4300112: seat2_2
+    4300114: seat2_3
+    4300116: seat2_4
+    4300118: seat3_1
+    4300120: seat3_2
+    4300122: seat3_3
+    4300124: seat3_4
+    4300126: tailfin
+    4300128: tailrotor1
+    4300130: tailrotor2
+    4300132: tailrotor3
+    4300134: tailrotor4
+    4300136: tailrotorhead
+    4300138: tailthing
+    4300140: tailwing
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box001Mat
+    second: {fileID: 2100000, guid: 0c1fb93f00fe25240b76eb8ceb2f8f02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box002Mat
+    second: {fileID: 2100000, guid: ad9303a5042bc4346b432ed282588286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cockpitMat
+    second: {fileID: 2100000, guid: 66157e67463b8044daf953d54beb3f04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cockpit_windowsMat
+    second: {fileID: 2100000, guid: 2751137d6a874ca42acd6a0283a4f914, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jammerMat
+    second: {fileID: 2100000, guid: 2d0fc7ea16f4afc408022f0bb0ab7c0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jammer_Mat
+    second: {fileID: 2100000, guid: 2f7e895809bf7a849bff59d60c22b3a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp1Mat
+    second: {fileID: 2100000, guid: c4277f22223e5e144b82632499842767, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamp2Mat
+    second: {fileID: 2100000, guid: 49e87aaf8ee00da4488cdd82ee45f138, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftammobeltMat
+    second: {fileID: 2100000, guid: 23f2f9042e8d94545b0e4c8f970d666a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftcockpitdoorMat
+    second: {fileID: 2100000, guid: 4334863e98d4185489e766c900cc45c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftcockpitdoor_windowMat
+    second: {fileID: 2100000, guid: 50988b546f854754e9a9c2ee79e85baa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftcontrolsMat
+    second: {fileID: 2100000, guid: 75f55cece31ebd54ebf78068623689e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftdoorMat
+    second: {fileID: 2100000, guid: 1d5c356ce3f93ad4f8ea7d627b987986, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftdoor_windowsMat
+    second: {fileID: 2100000, guid: 3082ac16b6cb8ef4fbe6f581dadb3ac0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftengineMat
+    second: {fileID: 2100000, guid: 3ec9ed88ac5a35a4c8dd97479b4b6348, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftgunnerdoorMat
+    second: {fileID: 2100000, guid: 4738383e09f9bd840bcc7362c2287916, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftgunnerdoor_windowsMat
+    second: {fileID: 2100000, guid: 4ff21e5062deded45b7556bec399125e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftgunnerseatMat
+    second: {fileID: 2100000, guid: fb0bf87601ccb6342b739ef69bddc9e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftlafetteMat
+    second: {fileID: 2100000, guid: a286e664d7ba5d145bfd68c923326481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftminigunMat
+    second: {fileID: 2100000, guid: 05e713f699d58f1449282e0305a36df4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftminigunbarrelsMat
+    second: {fileID: 2100000, guid: e889a3aec77de46419e08e3eeb9b84ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftpilotseatMat
+    second: {fileID: 2100000, guid: 1184c6877bcd51f439849a78704767ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftwheelMat
+    second: {fileID: 2100000, guid: d0d30f1fe05e2184b8a3ed1bc6956162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leftwheel_Mat
+    second: {fileID: 2100000, guid: cb085913c6261a543aea59b20ecaf8cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mainhullMat
+    second: {fileID: 2100000, guid: 5e5a980100de8994c8f597bf7e666808, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: randomthing1Mat
+    second: {fileID: 2100000, guid: 5629a9fe85630ec42bc7181f8bb3b6a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: randomthing2Mat
+    second: {fileID: 2100000, guid: 81e3348c65ad71f4f9db7b9693737309, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: randomthing3Mat
+    second: {fileID: 2100000, guid: 2b4aa5f845414e040955cd4534d2c024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rearwheelMat
+    second: {fileID: 2100000, guid: ca3f5f5eb497b93489c8ccec436cd010, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rearwheel_Mat
+    second: {fileID: 2100000, guid: e32c9ff798fff7342b856509005a0526, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightammobeltMat
+    second: {fileID: 2100000, guid: 001568b4f6a056e4d94c78f23d2fea5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightcockpitdoorMat
+    second: {fileID: 2100000, guid: fee85675590e0634297eda1df8e73733, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightcockpitdoor_windowMat
+    second: {fileID: 2100000, guid: 0bce039e04376804283266c47c296fce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightcontrolsMat
+    second: {fileID: 2100000, guid: 18fdc5df117863741a999df173091e57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightdoorMat
+    second: {fileID: 2100000, guid: fd3f875c809147248bc2de51cfa5bc0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightdoor_windowsMat
+    second: {fileID: 2100000, guid: b937b9c073a31dc4fb1b4f8b137c18c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightengineMat
+    second: {fileID: 2100000, guid: 5734a22fd74074a479732a9322002e89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightgunnerdoorMat
+    second: {fileID: 2100000, guid: 24e052b248512fb4a91907d0cba067a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightgunnerdoor_windowsMat
+    second: {fileID: 2100000, guid: 522024c9f10d45d49afb550559af40e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightgunnerseatMat
+    second: {fileID: 2100000, guid: 463163afcfc99c44daa219cfe2b52d31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightlafetteMat
+    second: {fileID: 2100000, guid: 542f6786affe1ee448bc8cde5602d23e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightminigunMat
+    second: {fileID: 2100000, guid: b6c6d80979c4ce54db9def59d8f6a501, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightminigunbarrelsMat
+    second: {fileID: 2100000, guid: 6dbd1f0e0002769459507890ed75399f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightpilotseatMat
+    second: {fileID: 2100000, guid: b19ba7ca00c32e245b9f76ae3194dc17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightwheelMat
+    second: {fileID: 2100000, guid: d794555e0ec93ff4fa9e1e86a9e4db6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rightwheel_Mat
+    second: {fileID: 2100000, guid: 8fc4cfcfd4da6414f8dea114f4a16086, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rotor1Mat
+    second: {fileID: 2100000, guid: f836e25cd58966f40a7d96f69b335a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rotor2Mat
+    second: {fileID: 2100000, guid: 00ca48d4a0fa44a4a81ae2bcee45e875, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rotor3Mat
+    second: {fileID: 2100000, guid: 5a6b3fe96d52f4744aa86f651ae5ede0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rotor4Mat
+    second: {fileID: 2100000, guid: 2f0fcb0a405bf904c99c7839d29f0515, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rotorheadMat
+    second: {fileID: 2100000, guid: 84608e3b14705ef4688514d21000f29e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat1_1Mat
+    second: {fileID: 2100000, guid: 8cceae108b18cbb41b091c8355ead6ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat1_2Mat
+    second: {fileID: 2100000, guid: 25e823b4a5dd3444ab458e318e31db27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat1_3Mat
+    second: {fileID: 2100000, guid: 5604a891c4df4f04aba328c995e1a263, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat1_4Mat
+    second: {fileID: 2100000, guid: 26786c846ae867a448ebd38a18a3cd6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat2_1Mat
+    second: {fileID: 2100000, guid: dca8c5b7cef750946a7474d6811e12fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat2_2Mat
+    second: {fileID: 2100000, guid: d6fcea573f3f01442875d3ee61b89fb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat2_3Mat
+    second: {fileID: 2100000, guid: f03df4ae63c491140b44fafd7169d939, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat2_4Mat
+    second: {fileID: 2100000, guid: 87db005ea0fdb5b48a4e8441d9f8fdc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat3_1Mat
+    second: {fileID: 2100000, guid: b8486440dbfe24c4483849b801e1600f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat3_2Mat
+    second: {fileID: 2100000, guid: fd1dbb468ba66614b921e373cdcf5a65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat3_3Mat
+    second: {fileID: 2100000, guid: 5fadd57a89073e84aac688da65533eee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seat3_4Mat
+    second: {fileID: 2100000, guid: 8abb770b167f6a541be43c0bbc23c585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailfinMat
+    second: {fileID: 2100000, guid: 721276c54c8d56b4fb584970d7dbed63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailrotor1Mat
+    second: {fileID: 2100000, guid: becb15338edd559469c32cd58bccdf6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailrotor2Mat
+    second: {fileID: 2100000, guid: 6f362cb5a06c66c4db44cf9428c9f910, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailrotor3Mat
+    second: {fileID: 2100000, guid: 4d99fe0cc5dd2d54381deccf5d6e780b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailrotor4Mat
+    second: {fileID: 2100000, guid: 03530a86302c348438446ce4279acdfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailrotorheadMat
+    second: {fileID: 2100000, guid: 9c0bd220d7706da43b5c439b3f6fc372, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailthingMat
+    second: {fileID: 2100000, guid: ecc73517c94cea4479321f64e35d8919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tailwingMat
+    second: {fileID: 2100000, guid: b76ff944213768d409d777bbdbae1c92, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
