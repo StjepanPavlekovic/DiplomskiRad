@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour
     public GameObject croshair;
     public GameObject croshairInteractable;
     private bool fading = false;
+    public Canvas introScreen;
+    private bool gameCleared = false;
 
     public MouseLookScript mouseController;
 
@@ -63,6 +65,17 @@ public class UIManager : MonoBehaviour
                 health.text = 100 + "";
             }
         }
+
+        GameManager.instance.gamePaused = true;
+    }
+
+    public void StartGame()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        introScreen.gameObject.SetActive(false);
+        GameManager.instance.gamePaused = false;
+        hudScreen.gameObject.SetActive(true);
     }
 
     public void UpdateAmmo()
@@ -119,7 +132,7 @@ public class UIManager : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetKeyDown(KeyCode.O))
+            if (Input.GetKeyDown(KeyCode.O) && !gameCleared)
             {
                 if (!GameManager.instance.gamePaused)
                 {
@@ -268,6 +281,7 @@ public class UIManager : MonoBehaviour
 
     public void HideScreens()
     {
+        gameCleared = true;
         hudScreen.gameObject.SetActive(false);
         if (hintScreen.gameObject.activeInHierarchy)
         {

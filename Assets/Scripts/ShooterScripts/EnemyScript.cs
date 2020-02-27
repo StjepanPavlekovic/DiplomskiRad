@@ -63,7 +63,7 @@ public class EnemyScript : MonoBehaviour
             }
             if (keyItemDrop != null)
             {
-                if (!GameManager.instance.AlreadyCollected(keyItemDrop.GetComponent<KeyItem>().type))
+                if (!GameManager.instance.AlreadyCollected(keyItemDrop.GetComponentInChildren<KeyItem>().type))
                 {
                     Instantiate(keyItemDrop, transform.position, keyItemDrop.transform.rotation);
                 }

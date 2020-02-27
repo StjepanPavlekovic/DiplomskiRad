@@ -21,7 +21,6 @@ public class MouseLookScript : MonoBehaviour
     void Start()
     {
         interactableElements = new List<Interactable>();
-        Cursor.lockState = CursorLockMode.Locked;
         StartCoroutine(CheckForInteractableObjects());
     }
 

@@ -80,8 +80,6 @@ public class GameManager : MonoBehaviour
         {
             UIManager.instance.UpdateHint(hints[CurrentQuest.FindTorch]);
         }
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public string deathNote;
