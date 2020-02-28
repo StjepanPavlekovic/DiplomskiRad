@@ -78,6 +78,7 @@ public class WeaponManager : MonoBehaviour
 
     public void CollectedAmmo(GunType type, int collectedAmmo)
     {
+        GameManager.instance.interactionsCount++;
         foreach (var item in weapons)
         {
             if (item.type == type)

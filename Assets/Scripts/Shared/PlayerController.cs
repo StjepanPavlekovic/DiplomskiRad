@@ -124,6 +124,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
             rb.AddForce((Vector3.up + (((!isGrounded) ? deltaPos : (deltaPos / 2))).normalized / 4.2f) * jumpPower);
+            GameManager.instance.jumpsCount++;
         }
         previousPosition = transform.position;
     }
@@ -168,6 +169,7 @@ public class PlayerController : MonoBehaviour
 
     public void Heal(int healAmount, HealthPackScript hps)
     {
+        GameManager.instance.interactionsCount++;
         if (health < initialHealth)
         {
             if ((health += healAmount) > initialHealth)

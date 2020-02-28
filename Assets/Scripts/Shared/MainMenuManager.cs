@@ -19,6 +19,10 @@ public class MainMenuManager : MonoBehaviour
     private bool fading = false;
 
     public static MainMenuManager instance;
+
+    public GameObject explorerGameButton;
+    public GameObject shooterGameButton;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -27,7 +31,6 @@ public class MainMenuManager : MonoBehaviour
             return;
         }
         instance = this;
-        //DontDestroyOnLoad(this);
     }
 
     private void Start()
@@ -52,6 +55,16 @@ public class MainMenuManager : MonoBehaviour
                 warning.gameObject.SetActive(true);
             }
             StartCoroutine(MenuScreenFader(warning.GetComponent<CanvasGroup>(), 0, 1, 1));
+        }
+
+        if (SuperManager.instance.explorerComplete)
+        {
+            explorerGameButton.SetActive(false);
+        }
+
+        if (SuperManager.instance.shooterComplete)
+        {
+            shooterGameButton.SetActive(false);
         }
     }
 

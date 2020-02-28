@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum CurrentQuest
 {
@@ -51,6 +52,14 @@ public class GameManager : MonoBehaviour
     public List<EnemySpawner> enemySpawners;
     public List<GameObject> cleanUpOnReset;
 
+    //TELEMETRY RELATED FIELDS
+    public float timeBetweenQuest = 0;
+    public float playTime = 0;
+    public List<float> times;
+    public int deathCount = 0;
+    public int interactionsCount = 0;
+    public int jumpsCount = 0;
+
     private void Awake()
     {
         instance = this;
@@ -80,11 +89,37 @@ public class GameManager : MonoBehaviour
         {
             UIManager.instance.UpdateHint(hints[CurrentQuest.FindTorch]);
         }
+        times = new List<float>();
+    }
+
+    private void Update()
+    {
+        if (!gamePaused)
+        {
+            playTime += Time.deltaTime;
+            timeBetweenQuest += Time.deltaTime;
+        }
+    }
+
+    public void EndGame()
+    {
+        switch (game)
+        {
+            case Game.Explorer:
+                SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount);
+                break;
+            case Game.Shooter:
+                SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount);
+                break;
+        }
+
+        SceneManager.LoadScene("MainMenu");
     }
 
     public string deathNote;
     public void KillPlayer(GameObject resetableObject = null, string deathMessage = null)
     {
+        deathCount++;
         if (deathMessage != null)
         {
             deathNote = deathMessage;
@@ -159,6 +194,9 @@ public class GameManager : MonoBehaviour
 
     public void NextQuest()
     {
+        times.Add(timeBetweenQuest);
+        timeBetweenQuest = 0;
+
         switch (currentQuest)
         {
             //ExplorerQuestCheck

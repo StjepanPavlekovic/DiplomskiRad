@@ -325,7 +325,7 @@ public class UIManager : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        GameManager.instance.EndGame();
     }
 
     public void UpdateHint(Hint hint = null)
