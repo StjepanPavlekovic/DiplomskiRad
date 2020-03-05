@@ -58,13 +58,6 @@ public class SuperManager : MonoBehaviour
                 interactionsCountExplorer = interactionsCount;
                 jumpsCountExplorer = jumpsCount;
                 moveTimeExplorer = moveTime;
-
-                Debug.Log("GameComplete: " + game + " Total Playtime: " + playTime + " Death, interactions and jump count: " + deathCount + " " + interactionsCount + " " + jumpsCount);
-                foreach (var item in times)
-                {
-                    Debug.Log("Time on quest: " + item);
-                }
-                Debug.Log("Time spent moving: " + moveTime);
                 return;
 
             case Game.Shooter:
@@ -75,13 +68,6 @@ public class SuperManager : MonoBehaviour
                 interactionsCountShooter = interactionsCount;
                 jumpsCountExplorer = jumpsCount;
                 moveTimeShooter = moveTime;
-
-                Debug.Log("GameComplete: " + game + " Total Playtime: " + playTime + " Death, interactions and jump count: " + deathCount + " " + interactionsCount + " " + jumpsCount);
-                foreach (var item in times)
-                {
-                    Debug.Log("Time on quest: " + item);
-                }
-                Debug.Log("Time spent moving: " + moveTime);
                 return;
         }
     }
