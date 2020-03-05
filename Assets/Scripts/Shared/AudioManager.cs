@@ -11,6 +11,7 @@ public enum AudioClips
     ToggleCrystal,
     MovePillar,
     ExplorerDeath,
+    Flamethrower,
 
     //Shooter sounds
     GunClick,
@@ -46,6 +47,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip movePillar;
     public AudioClip toggleCrystal;
     public AudioClip explorerDeath;
+    public AudioClip flamethrower;
 
     //Shooter sounds
     public AudioClip gunClick;
@@ -83,6 +85,7 @@ public class AudioManager : MonoBehaviour
         audioClips.Add(AudioClips.ToggleCrystal, toggleCrystal);
         audioClips.Add(AudioClips.MovePillar, movePillar);
         audioClips.Add(AudioClips.ExplorerDeath, explorerDeath);
+        audioClips.Add(AudioClips.Flamethrower, flamethrower);
 
         //Shooter
         audioClips.Add(AudioClips.GunClick, gunClick);
