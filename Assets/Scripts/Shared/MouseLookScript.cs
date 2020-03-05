@@ -99,7 +99,6 @@ public class MouseLookScript : MonoBehaviour
         foreach (var item in interactableElements)
         {
             item.Interact();
-            GameManager.instance.interactionsCount++;
         }
     }
 }

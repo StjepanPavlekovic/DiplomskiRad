@@ -22,6 +22,7 @@ public class KeyItem : MonoBehaviour, Interactable
 
     public void Interact()
     {
+        GameManager.instance.interactionsCount++;
         GameManager.instance.player.keyItems.Add(this);
         AudioManager.instance.PlaySound(AudioClips.Pickup);
         if (type == KeyItemType.Note && GameManager.instance.currentQuest == CurrentQuest.AvoidScouts)

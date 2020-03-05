@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
     public int deathCount = 0;
     public int interactionsCount = 0;
     public int jumpsCount = 0;
+    public float moveTime = 0;
 
     private void Awake()
     {
@@ -103,16 +104,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        switch (game)
-        {
-            case Game.Explorer:
-                SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount);
-                break;
-            case Game.Shooter:
-                SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount);
-                break;
-        }
-
+        SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount, moveTime);
         SceneManager.LoadScene("MainMenu");
     }
 

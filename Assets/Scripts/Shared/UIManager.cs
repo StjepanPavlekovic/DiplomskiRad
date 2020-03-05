@@ -32,6 +32,9 @@ public class UIManager : MonoBehaviour
     private bool fading = false;
     public Canvas introScreen;
     private bool gameCleared = false;
+    public Canvas confirmDialog;
+    public Button continuePlaying;
+    public Button confirmQuit;
 
     public MouseLookScript mouseController;
 
@@ -132,7 +135,7 @@ public class UIManager : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetKeyDown(KeyCode.O) && !gameCleared)
+            if (Input.GetKeyDown(KeyCode.O) && !gameCleared && !introScreen.gameObject.activeInHierarchy && !confirmDialog.gameObject.activeInHierarchy)
             {
                 if (!GameManager.instance.gamePaused)
                 {
@@ -320,6 +323,18 @@ public class UIManager : MonoBehaviour
         if (GameManager.instance.game == Game.Explorer)
         {
             ambience.enabled = useAudio.isOn;
+        }
+    }
+
+    public void ToggleExitDialog()
+    {
+        if (confirmDialog.gameObject.activeInHierarchy)
+        {
+            confirmDialog.gameObject.SetActive(false);
+        }
+        else
+        {
+            confirmDialog.gameObject.SetActive(true);
         }
     }
 

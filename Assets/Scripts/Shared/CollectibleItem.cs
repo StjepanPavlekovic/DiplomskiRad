@@ -63,6 +63,7 @@ public class CollectibleItem : MonoBehaviour, ICollectible, Interactable
     {
         if (interactable)
         {
+            GameManager.instance.interactionsCount++;
             if (collectible)
             {
                 CollectItem();

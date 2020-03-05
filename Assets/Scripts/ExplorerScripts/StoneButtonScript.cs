@@ -17,9 +17,11 @@ public class StoneButtonScript : MonoBehaviour, Interactable
     {
         if (!pressed)
         {
+            GameManager.instance.interactionsCount++;
             pressed = true;
             animator.SetTrigger("Press");
             AudioManager.instance.PlaySound(AudioClips.ButtonSound);
+            GetComponentInChildren<ParticleSystem>().Stop();
             StoneButtonPuzzle.instance.NextButton();
         }
     }

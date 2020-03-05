@@ -92,12 +92,21 @@ public class MainMenuManager : MonoBehaviour
 
     public void LoadExplorer()
     {
+        if (!SuperManager.instance.firstChosen)
+        {
+            SuperManager.instance.StartedFirstGame(Game.Explorer);
+        }
         StartCoroutine(MenuScreenFader(menu.GetComponent<CanvasGroup>(), 1, 0, 1));
         StartCoroutine(BeginSceneLoad(Game.Explorer));
     }
 
     public void LoadShooter()
     {
+
+        if (!SuperManager.instance.firstChosen)
+        {
+            SuperManager.instance.StartedFirstGame(Game.Shooter);
+        }
         StartCoroutine(MenuScreenFader(menu.GetComponent<CanvasGroup>(), 1, 0, 1));
         StartCoroutine(BeginSceneLoad(Game.Shooter));
     }

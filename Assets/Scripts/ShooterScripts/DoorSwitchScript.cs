@@ -17,7 +17,7 @@ public class DoorSwitchScript : MonoBehaviour, Interactable
     [SerializeField]
     private int terminalNumber;
     private static int currentSequence = 0;
-    private static int failCounter = 3;
+    private static int failCounter = 1;
     private bool interactable = true;
 
     private void Start()
@@ -49,7 +49,7 @@ public class DoorSwitchScript : MonoBehaviour, Interactable
         }
         if ((failCounter -= 1) <= 0)
         {
-            failCounter = 3;
+            failCounter = 1;
             AudioManager.instance.PlaySound(AudioClips.Alert);
             GameManager.instance.KillPlayer(null, "You were detected...");
         }
@@ -69,6 +69,7 @@ public class DoorSwitchScript : MonoBehaviour, Interactable
     {
         if (interactable)
         {
+            GameManager.instance.interactionsCount++;
             interactable = false;
             if (!isSequenceTerminal)
             {

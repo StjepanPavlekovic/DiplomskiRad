@@ -11,6 +11,7 @@ public class ActivationAndDisable : MonoBehaviour, Interactable
 
     public void Interact()
     {
+        GameManager.instance.interactionsCount++;
         if (shouldPlaySound)
         {
             AudioManager.instance.PlaySound(clipToPlay);

@@ -107,13 +107,17 @@ public class PlayerController : MonoBehaviour
         {
             direction = -Vector3.forward;
         }
-        if (!sprinting)
+        if (direction != Vector3.zero)
         {
-            transform.Translate(direction.normalized * movementSpeed * Time.deltaTime);
-        }
-        else
-        {
-            transform.Translate(direction.normalized * movementSpeed * sprintFactor * Time.deltaTime);
+            if (!sprinting)
+            {
+                transform.Translate(direction.normalized * movementSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(direction.normalized * movementSpeed * sprintFactor * Time.deltaTime);
+            }
+            GameManager.instance.moveTime += Time.deltaTime;
         }
     }
 
@@ -169,7 +173,6 @@ public class PlayerController : MonoBehaviour
 
     public void Heal(int healAmount, HealthPackScript hps)
     {
-        GameManager.instance.interactionsCount++;
         if (health < initialHealth)
         {
             if ((health += healAmount) > initialHealth)

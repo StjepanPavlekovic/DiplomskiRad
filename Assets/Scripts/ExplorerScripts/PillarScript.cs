@@ -33,6 +33,7 @@ public class PillarScript : MonoBehaviour, Interactable
     {
         if (!locked)
         {
+            GameManager.instance.interactionsCount++;
             rb.AddForce(player.transform.forward * 8f, ForceMode.Impulse);
             AudioManager.instance.PlaySound(AudioClips.MovePillar);
         }
