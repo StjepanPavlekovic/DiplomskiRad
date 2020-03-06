@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    [DllImport("__Internal")]
+    private static extern void OpenSurvey(string url);
+
     [SerializeField]
     private Canvas tos;
     public Canvas warning;
@@ -22,6 +26,8 @@ public class MainMenuManager : MonoBehaviour
 
     public GameObject explorerGameButton;
     public GameObject shooterGameButton;
+    public GameObject survey;
+    public GameObject initialChoice;
 
     private void Awake()
     {
@@ -66,6 +72,12 @@ public class MainMenuManager : MonoBehaviour
         {
             shooterGameButton.SetActive(false);
         }
+
+        if(SuperManager.instance.explorerComplete || SuperManager.instance.shooterComplete)
+        {
+            initialChoice.SetActive(false);
+            survey.SetActive(true);
+        }
     }
 
     private void Update()
@@ -74,6 +86,12 @@ public class MainMenuManager : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+
+    public void OpenSurveyButtonClick()
+    {
+        string url = "https://docs.google.com/forms/d/e/1FAIpQLSeHex5f6hZT2Lsnb8SBiXHu7boa3O60FP4V0p5wm7hkAeg7WQ/viewform?usp=pp_url&entry.277285449=" + SuperManager.instance.userId.ToString();
+        OpenSurvey(url);
     }
 
     public void Continue()
@@ -96,6 +114,10 @@ public class MainMenuManager : MonoBehaviour
         {
             SuperManager.instance.StartedFirstGame(Game.Explorer);
         }
+        else
+        {
+            SuperManager.instance.StartedSecondGame(Game.Explorer);
+        }
         StartCoroutine(MenuScreenFader(menu.GetComponent<CanvasGroup>(), 1, 0, 1));
         StartCoroutine(BeginSceneLoad(Game.Explorer));
     }
@@ -106,6 +128,10 @@ public class MainMenuManager : MonoBehaviour
         if (!SuperManager.instance.firstChosen)
         {
             SuperManager.instance.StartedFirstGame(Game.Shooter);
+        }
+        else
+        {
+            SuperManager.instance.StartedSecondGame(Game.Shooter);
         }
         StartCoroutine(MenuScreenFader(menu.GetComponent<CanvasGroup>(), 1, 0, 1));
         StartCoroutine(BeginSceneLoad(Game.Shooter));

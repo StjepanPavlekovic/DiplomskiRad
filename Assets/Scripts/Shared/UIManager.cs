@@ -340,7 +340,12 @@ public class UIManager : MonoBehaviour
 
     public void ExitGame()
     {
-        GameManager.instance.EndGame();
+        GameManager.instance.EndGame(false);
+    }
+
+    public void ExitGameEarly()
+    {
+        GameManager.instance.EndGame(true);
     }
 
     public void UpdateHint(Hint hint = null)

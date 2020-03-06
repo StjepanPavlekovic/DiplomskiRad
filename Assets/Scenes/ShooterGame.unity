@@ -7152,7 +7152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &242400645
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15110,6 +15110,7 @@ MonoBehaviour:
   movePillar: {fileID: 0}
   toggleCrystal: {fileID: 0}
   explorerDeath: {fileID: 0}
+  flamethrower: {fileID: 0}
   gunClick: {fileID: 8300000, guid: f0f1bed69921ca74c9fef7a5c7c40f13, type: 3}
   gunShoot: {fileID: 8300000, guid: 56f31e32f1a03a348b1a2074638ea78f, type: 3}
   keyAccepted: {fileID: 8300000, guid: af13999a0083b0f4d9cc4bd1ac16d8b9, type: 3}
@@ -18769,7 +18770,7 @@ MonoBehaviour:
   m_MinValue: 5
   m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: 35
+  m_Value: 25
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -57190,7 +57191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1619742662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63550,7 +63551,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1895298507}
-        m_MethodName: ExitGame
+        m_MethodName: ExitGameEarly
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -81092,7 +81093,7 @@ PrefabInstance:
     - target: {fileID: 2830138057052542695, guid: 699e4aea3d86a8e4a9439941655eddf7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.29
+      value: -9.48
       objectReference: {fileID: 0}
     - target: {fileID: 2830138057052542695, guid: 699e4aea3d86a8e4a9439941655eddf7,
         type: 3}
@@ -81102,7 +81103,7 @@ PrefabInstance:
     - target: {fileID: 2830138057052542695, guid: 699e4aea3d86a8e4a9439941655eddf7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.96
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 2830138057052542695, guid: 699e4aea3d86a8e4a9439941655eddf7,
         type: 3}
@@ -83384,7 +83385,7 @@ PrefabInstance:
     - target: {fileID: 165651853651031130, guid: 8e231b8ff44e17b498f7f33e0bb67c72,
         type: 3}
       propertyPath: rotationSpeed
-      value: 35
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7575528976786659299, guid: 8e231b8ff44e17b498f7f33e0bb67c72,
         type: 3}

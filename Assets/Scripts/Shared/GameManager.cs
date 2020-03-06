@@ -102,9 +102,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void EndGame()
+    public void EndGame(bool endedEarly)
     {
-        SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount, moveTime);
+        if (!endedEarly)
+        {
+            SuperManager.instance.CompleteGame(game, playTime, times, deathCount, interactionsCount, jumpsCount, moveTime);
+            Debug.Log("Normal ending");
+        }
+        else
+        {
+            SuperManager.instance.CompleteGameEarly(game, playTime, times, deathCount, interactionsCount, jumpsCount, moveTime);
+            Debug.Log("Ending game early");
+        }
         SceneManager.LoadScene("MainMenu");
     }
 
