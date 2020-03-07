@@ -9,7 +9,7 @@ public class SuperManager : MonoBehaviour
     public bool shooterComplete = false;
     public bool explorerComplete = false;
     public bool firstChosen = false;
-    public Game gameChoosenFirst;
+    public Game gameChosenFirst;
     public bool earlyEnd = false;
 
     public Guid userId;
@@ -70,12 +70,20 @@ public class SuperManager : MonoBehaviour
         parameters.Clear();
     }
 
+    public void FoundOptionalMechanic(string mechanic)
+    {
+        parameters.Add("Mechanic", mechanic);
+        parameters.Add("First game chosen", gameChosenFirst);
+
+        Dispatch("Found Optional Mechanic");
+    }
+
     public void StartedFirstGame(Game game)
     {
         firstChosen = true;
-        gameChoosenFirst = game;
+        gameChosenFirst = game;
 
-        parameters.Add("Game", gameChoosenFirst);
+        parameters.Add("Game", gameChosenFirst);
 
         Dispatch("First Game Chosen");
     }

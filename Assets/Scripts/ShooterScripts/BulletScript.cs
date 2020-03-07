@@ -39,7 +39,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Target"))
+        if (other.gameObject.CompareTag("Target") && friendly)
         {
             other.gameObject.GetComponent<EnemyScript>().GetHit(this);
         }
@@ -47,6 +47,10 @@ public class BulletScript : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerController>().GetHit(gun.damage);
             PoolingManager.instance.StoreBullet(gameObject);
+        }
+        else if (other.gameObject.CompareTag("CameraTarget") && friendly)
+        {
+            other.gameObject.GetComponent<SecurityCameraController>().GetHit();
         }
     }
 

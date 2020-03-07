@@ -48,11 +48,6 @@ public class PlayerController : MonoBehaviour
             handleMovement();
             handleForces();
             handleJumping();
-
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                GameManager.instance.KillPlayer();
-            }
         }
         else if (GameManager.instance.isDead && !died)
         {

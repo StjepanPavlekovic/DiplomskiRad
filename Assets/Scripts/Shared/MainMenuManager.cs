@@ -28,6 +28,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject shooterGameButton;
     public GameObject survey;
     public GameObject initialChoice;
+    public GameObject loading;
 
     private void Awake()
     {
@@ -143,6 +144,10 @@ public class MainMenuManager : MonoBehaviour
         {
             yield return new WaitForEndOfFrame();
         }
+
+        loading.SetActive(true);
+        yield return new WaitForEndOfFrame();
+
         switch (game)
         {
             case Game.Explorer:

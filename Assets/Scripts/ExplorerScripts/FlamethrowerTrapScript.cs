@@ -27,6 +27,21 @@ public class FlamethrowerTrapScript : MonoBehaviour
                 duration = initialDuration;
             }
         }
+        for (int i = 0; i < particles.Length; i++)
+        {
+            if (particles[i].isPlaying)
+            {
+                particles[i].Stop();
+            }
+        }
+        if (trigger.enabled)
+        {
+            trigger.enabled = false;
+        }
+        if (pointLight.gameObject.activeInHierarchy)
+        {
+            pointLight.gameObject.SetActive(false);
+        }
     }
 
     private void Toggle()
