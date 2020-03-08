@@ -87,6 +87,7 @@ public class DoorSwitchScript : MonoBehaviour, Interactable
                     if (sequence.Length == currentSequence)
                     {
                         OpenGate();
+                        UIManager.instance.newQuestIndicator.SetActive(false);
                         GameManager.instance.NextQuest();
                     }
                 }

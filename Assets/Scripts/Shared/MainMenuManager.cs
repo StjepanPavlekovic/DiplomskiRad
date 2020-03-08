@@ -118,6 +118,8 @@ public class MainMenuManager : MonoBehaviour
         else
         {
             SuperManager.instance.StartedSecondGame(Game.Explorer);
+            Debug.Log("Started second game");
+
         }
         StartCoroutine(MenuScreenFader(menu.GetComponent<CanvasGroup>(), 1, 0, 1));
         StartCoroutine(BeginSceneLoad(Game.Explorer));

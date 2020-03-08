@@ -20,7 +20,7 @@ public class WeaponManager : MonoBehaviour
     private void Start()
     {
         currentWeapon = weapons[0];
-        minimumAmmo = currentWeapon.clipSize;
+        minimumAmmo = currentWeapon.clipSize * 2;
         UIManager.instance.UpdateAmmo();
     }
 
@@ -62,7 +62,7 @@ public class WeaponManager : MonoBehaviour
                 currentWeapon.Shoot(shaker);
                 UIManager.instance.UpdateAmmo();
             }
-            if ((Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(1)) && currentWeapon != null)
+            if (Input.GetKeyDown(KeyCode.R) && currentWeapon != null)
             {
                 currentWeapon.Reload();
                 UIManager.instance.UpdateAmmo();
