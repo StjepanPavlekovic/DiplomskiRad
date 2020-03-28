@@ -31,6 +31,7 @@ public class KeyItem : MonoBehaviour, Interactable
         }
         if (type == KeyItemType.LaserGun)
         {
+            UIManager.instance.ToggleInfiniteAmmo();
             WeaponManager.instance.SwitchWeapon();
             doorForFinalKeyItem.OpenDoor();
         }

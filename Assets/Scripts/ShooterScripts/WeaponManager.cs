@@ -20,7 +20,7 @@ public class WeaponManager : MonoBehaviour
     private void Start()
     {
         currentWeapon = weapons[0];
-        minimumAmmo = currentWeapon.clipSize * 2;
+        minimumAmmo = currentWeapon.clipSize * 3;
         UIManager.instance.UpdateAmmo();
     }
 

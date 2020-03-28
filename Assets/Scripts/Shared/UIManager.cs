@@ -44,6 +44,8 @@ public class UIManager : MonoBehaviour
     public Text health;
     public Text deathText;
     private string initialDeathText;
+    public GameObject ammoField;
+    public GameObject infAmmoField;
 
 
     [SerializeField]
@@ -93,6 +95,12 @@ public class UIManager : MonoBehaviour
             ammoLeft.text = 0 + "";
             currentAmmo.text = 0 + "";
         }
+    }
+
+    public void ToggleInfiniteAmmo()
+    {
+        ammoField.SetActive(false);
+        infAmmoField.SetActive(true);
     }
 
     public void UpdateHealth(float healthLeft)
